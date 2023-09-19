@@ -1,0 +1,177 @@
+/*geldig voor de gehele pagina*/
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-image: url("/blok1coderen/images/background.png");
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+/*logo*/
+.logo {
+  max-width: 10%;
+  height: auto;
+  position: absolute;
+}
+
+/*navigatie*/
+nav > ul {
+  list-style-type: none;
+  text-align: end;
+}
+
+nav > ul > li {
+  display: inline-block;
+  padding: 1vw 1vh;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: plum;
+  font-size: 20px;
+}
+
+/*hover changing color*/
+nav > ul > li > a:hover,
+.scroll_button > a:hover,
+h2 > a:hover,
+.mail > a:hover,
+.submit:hover {
+  color: purple;
+}
+
+/*hoofd van de pagina*/
+h1 {
+  text-align: center;
+  justify-content: center;
+  font-size: 500%;
+  font-weight: bold;
+  margin: 2em 1em 0.5em 1em;
+}
+
+.description,
+.scroll_button {
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 10;
+}
+
+.description {
+  width: 40em;
+  margin: auto;
+}
+
+/*Normal text color*/
+h2 > a,
+.scroll_button > a,
+footer,
+.mail > a {
+  text-decoration: none;
+  color: plum;
+}
+
+/*naar beneden scrollen*/
+.scroll_button > a {
+  border: 2px solid purple;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+/*puntjes voor navigatie*/
+h2 {
+  font-size: 100px;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/*For LeaveYourInput*/
+.opinion {
+  margin-top: 6em;
+  margin-bottom: 1em;
+  color: plum;
+}
+
+textarea {
+  resize: none;
+  background-color: darkslategray;
+  width: 40vw;
+  height: 30vh;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Comfortaa", sans-serif;
+  color: plum;
+}
+
+form > label,
+::placeholder {
+  color: plum;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+form > input {
+  color: plum;
+  background-color: darkslategrey;
+  width: 40vw;
+  height: 5vh;
+  font-size: 1.2em;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  margin: 0.5rem;
+}
+
+/*Star rating*/
+.star-rating {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.star-rating > input {
+  display: none;
+}
+.star-rating > label {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.star-rating > label > img {
+  width: 100%;
+  display: block;
+}
+
+.star-rating > label > img.gold {
+  position: relative;
+  margin-top: -30px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.star-rating > label:hover > img.gold,
+.star-rating > input:checked ~ label > img.gold,
+.star-rating > label:hover ~ label > img.gold {
+  opacity: 1;
+}
+
+/*Voor alle sterren rating games*/
+.stars {
+  text-align: center;
+}
