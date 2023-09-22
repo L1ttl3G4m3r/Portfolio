@@ -1,0 +1,38 @@
+* {
+    background-color: #0d1f23;
+    background-size: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #afb3b7;
+ }
+
+nav > ul {
+    text-align: end;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 1vw 1vh;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #afb3b7;
+    margin: 1em;
+}
+
+a:hover {
+    color: #69818d;
+    transition: 0.5s;
+    font-size: 1.5vw;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+    font-size: 10vw;
+    letter-spacing: 0.5em;
+}
