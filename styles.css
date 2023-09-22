@@ -9,7 +9,7 @@ body {
  }
 
 nav > ul {
-    text-align: end;
+    text-align: center;
 }
 
 nav > ul > li {
@@ -21,18 +21,19 @@ nav > ul > li > a {
     text-decoration: none;
     color: #afb3b7;
     margin: 1em;
+    font-size: 3vw;
 }
 
 a:hover {
     color: #69818d;
     transition: 0.5s;
-    font-size: 1.5vw;
+    font-size: 3.5vw;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    margin-top: 1.5em;
+    margin-bottom: 10vh;
     font-size: 10vw;
-    letter-spacing: 0.5em;
+    letter-spacing: 5vw;
 }
