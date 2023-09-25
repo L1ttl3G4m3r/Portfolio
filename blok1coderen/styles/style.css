@@ -36,8 +36,9 @@ nav > ul > li > a:hover,
 .scroll_button > a:hover,
 h2 > a:hover,
 .mail > a:hover,
-.submit:hover {
+.submit:hover, .game:hover {
   color: purple;
+  transition: 0.5s;
 }
 
 /*hoofd van de pagina*/
@@ -78,16 +79,64 @@ footer,
   padding: 5px;
 }
 
+#down {
+  color: plum;
+  font-size: 500%;
+  margin-top: 60vh;
+  margin-bottom: 10vh;
+}
+
 /*puntjes voor navigatie*/
 h2 {
-  font-size: 100px;
-  letter-spacing: 10px;
+  font-size: 20vw;
+  letter-spacing: 2vw;
   text-align: center;
   padding: 0;
   margin: 0;
 }
 
-/*For LeaveYourInput*/
+/*Voor gamelist*/
+.container {
+  width: 100%;
+  flex: 0 0 35%;
+}
+
+.gameinfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  white-space: 1vw;
+  text-align: center;
+}
+
+.game {
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: plum;
+  width: 25%;
+  margin: 1%;
+  height: fixed;
+  border-radius: 5%;
+}
+
+#gamelogo {
+  margin-top: 10%;
+  width: 80%;
+  height: auto;
+}
+
+.game > h3 {
+  font-size: 2vw;
+  letter-spacing: normal;
+}
+
+.game > p {
+  font-size: 1.5vw;
+  letter-spacing: normal;
+}
+
+/*Voor LeaveYourInput*/
 .opinion {
   margin-top: 6em;
   margin-bottom: 1em;
