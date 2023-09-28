@@ -37,7 +37,8 @@ nav > ul > li > a:hover,
 h2 > a:hover,
 .mail > a:hover,
 .submit:hover,
-.game:hover {
+.game:hover,
+#gotowebsite:hover {
   color: purple;
   transition: 250ms;
 }
@@ -135,11 +136,13 @@ h2 {
 /*For About Me content*/
 .aboutme > p {
   display: inline-block;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  width: 70%;
   text-align: left;
   font-size: 1.5vw;
-  letter-spacing: normal;
+  letter-spacing: 0.3vw;
   color: plum;
-  display: flex;
 }
 
 #lefttext {
@@ -152,13 +155,10 @@ h2 {
 
 #profilepicture,
 #gamingconsole {
-  display: block;
+  display: inline-block;
+  width: 13%;
   border: 1px solid black;
   border-radius: 10px;
-}
-
-#profilepicture {
-  justify-content: end;
 }
 
 #gamingconsole {
@@ -168,6 +168,7 @@ h2 {
 /*For all star ratings (emoji's)*/
 .stars {
   text-align: center;
+  font-size: 2.5vw;
 }
 
 /*For LeaveYourInput*/
@@ -264,4 +265,36 @@ label {
 .submit:hover {
   scale: 1.05;
   background-color: gray;
+}
+
+/*For Genshin Impact page*/
+#genshinlogo {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: 1px solid plum;
+  border-radius: 10px;
+}
+
+.gametitle {
+  margin: 5vw;
+}
+
+#genshininfo {
+  color: plum;
+  letter-spacing: 0.3vw;
+  margin: 5em;
+}
+
+#gotowebsite {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: plum;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
 }
