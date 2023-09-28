@@ -1,4 +1,4 @@
-/*geldig voor de gehele pagina*/
+/*For the whole website*/
 body {
   font-family: "Comfortaa", sans-serif;
   background-image: url("/blok1coderen/images/background.png");
@@ -8,14 +8,14 @@ body {
   background-attachment: local;
 }
 
-/*logo*/
+/*Logo*/
 .logo {
   max-width: 10%;
   height: auto;
   position: absolute;
 }
 
-/*navigatie*/
+/*Navigation*/
 nav > ul {
   text-align: end;
 }
@@ -31,17 +31,18 @@ nav > ul > li > a {
   font-size: 20px;
 }
 
-/*hover changing color*/
+/*Hover changing color*/
 nav > ul > li > a:hover,
 .scroll_button > a:hover,
 h2 > a:hover,
 .mail > a:hover,
-.submit:hover, .game:hover {
+.submit:hover,
+.game:hover {
   color: purple;
-  transition: 0.5s;
+  transition: 250ms;
 }
 
-/*hoofd van de pagina*/
+/*Head of the page*/
 h1 {
   text-align: center;
   justify-content: center;
@@ -72,7 +73,7 @@ footer,
   color: plum;
 }
 
-/*naar beneden scrollen*/
+/*Scrolling down*/
 .scroll_button > a {
   border: 2px solid purple;
   border-radius: 6px;
@@ -86,7 +87,7 @@ footer,
   margin-bottom: 10vh;
 }
 
-/*puntjes voor navigatie*/
+/*Dashes for navigation*/
 h2 {
   font-size: 20vw;
   letter-spacing: 2vw;
@@ -95,7 +96,7 @@ h2 {
   margin: 0;
 }
 
-/*Voor gamelist*/
+/*For gamelist*/
 .container {
   width: 100%;
   flex: 0 0 35%;
@@ -131,12 +132,45 @@ h2 {
   letter-spacing: normal;
 }
 
-.game > p {
+/*For About Me content*/
+.aboutme > p {
+  display: inline-block;
+  text-align: left;
   font-size: 1.5vw;
   letter-spacing: normal;
+  color: plum;
+  display: flex;
 }
 
-/*Voor LeaveYourInput*/
+#lefttext {
+  justify-content: left;
+}
+
+#righttext {
+  justify-content: right;
+}
+
+#profilepicture,
+#gamingconsole {
+  display: block;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#profilepicture {
+  justify-content: end;
+}
+
+#gamingconsole {
+  justify-content: start;
+}
+
+/*For all star ratings (emoji's)*/
+.stars {
+  text-align: center;
+}
+
+/*For LeaveYourInput*/
 .opinion {
   margin-top: 6em;
   margin-bottom: 1em;
@@ -217,9 +251,17 @@ label {
 .star-rating > input:checked ~ label > img.gold,
 .star-rating > label:hover ~ label > img.gold {
   opacity: 1;
+  scale: 1.2;
 }
 
-/*Voor alle sterren rating games*/
-.stars {
-  text-align: center;
+/*For Submit button*/
+.submit {
+  border-style: outset;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.submit:hover {
+  scale: 1.05;
+  background-color: gray;
 }
