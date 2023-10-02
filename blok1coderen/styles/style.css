@@ -8,95 +8,7 @@ body {
   background-attachment: local;
 }
 
-/*****************************************Logo*/
-.logo {
-  max-width: 4%;
-  height: auto;
-  position: absolute;
-}
-
-/*****************************************Navigation*/
-nav > ul {
-  text-align: end;
-  background-color: plum;
-}
-
-nav > ul > li {
-  display: inline-block;
-  padding: 1vw 1vh;
-}
-
-nav > ul > li > a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
-
-nav > ul > li > a:hover {
-  text-decoration: underline;
-}
-
-/*****************************************Head of the page*/
-h1 {
-  text-align: center;
-  font-size: 500%;
-  font-weight: bold;
-  margin: 2em 1em 0.5em 1em;
-}
-
-.description,
-.scroll_button {
-  text-align: center;
-  padding: 0;
-  margin: 10;
-}
-
-.description {
-  width: 40em;
-  margin: auto;
-}
-
-/*****************************************Scrolling down*/
-.scroll_button > a {
-  background-color: plum;
-  text-decoration: none;
-  color: white;
-  border-radius: 6px;
-  padding: 5px;
-}
-
-.scroll_button > a:hover {
-  background-color: purple;
-  transition: 250ms;
-}
-
-#down {
-  color: white;
-  font-size: 500%;
-  margin-top: 0;
-  margin-bottom: 10vh;
-}
-
-/*****************************************Dashes for navigation + h2 headline*/
-main {
-  text-align: center;
-}
-
-.dashes {
-  color: plum;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20vw;
-  letter-spacing: 2vw;
-  margin: auto;
-  margin-bottom: 35%;
-}
-
-.dashes:hover {
-  color: purple;
-  animation: bounce-in 1s ease 1;
-}
-
+/*****************************************Keyframes*/
 @keyframes bounce-in {
   0% {
     opacity: 0;
@@ -114,6 +26,149 @@ main {
   }
 }
 
+@keyframes jump {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.submit:hover,
+.dashes:hover,
+#gotowebsite:hover {
+  animation: bounce-in 1s ease 1;
+}
+
+/*****************************************Color for the whole website*/
+nav > ul > li > a,
+.scroll_button > a,
+#down,
+.game1, .game2, .game3, .game4,
+.opinion, textarea, form > label, ::placeholder, form > input,
+#genshininfo, #gotowebsite, #genshininfo, #genshininfo2,
+footer {
+  color: white;
+}
+
+.dashes,
+#quote {
+  color: plum;
+}
+
+.dashes:hover {
+  color: purple;
+}
+
+nav > ul,
+.scroll_button > a,
+.game1, .game2, .game3, .game4,
+textarea, form > input,
+.submit,
+#gotowebsite {
+  background-color: plum;
+}
+
+.scroll_button > a:hover,
+.game1:hover, .game2:hover, .game3:hover, .game4:hover,
+.submit:hover,
+#gotowebsite:hover {
+  background-color: purple;
+  transition: 250ms;
+}
+
+/*****************************************Text decoration*/
+nav > ul > li > a,
+.scroll_button > a,
+.dashes,
+.game1, .game2, .game3, .game4,
+#gotowebsite {
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+/*****************************************Text align*/
+h1,
+.description, .scroll_button,
+main,
+.gameinfo,
+.opinion, textarea, form > label, ::placeholder, form > input,
+.stars {
+  text-align: center;
+}
+
+nav > ul,
+footer {
+  text-align: end;
+}
+
+#genshininfo, #genshininfo2 {
+  text-align: left;
+}
+
+/*****************************************Logo*/
+.logo {
+  max-width: 4%;
+  height: auto;
+  position: absolute;
+}
+
+/*****************************************Navigation*/
+nav > ul > li {
+  display: inline-block;
+  padding: 1vw 1vh;
+}
+
+nav > ul > li > a {
+  font-size: 20px;
+}
+
+/*****************************************Head of the page*/
+h1 {
+  font-size: 500%;
+  font-weight: bold;
+  margin: 2em 1em 0.5em 1em;
+}
+
+.description,
+.scroll_button {
+  padding: 0;
+  margin: 10;
+}
+
+.description {
+  width: 40em;
+  margin: auto;
+}
+
+/*****************************************Scrolling down*/
+.scroll_button > a {
+  border-radius: 6px;
+  padding: 5px;
+}
+
+#down {
+  font-size: 500%;
+  margin-top: 0;
+  margin-bottom: 10vh;
+}
+
+/*****************************************Dashes for navigation + h2 headline*/
+.dashes {
+  display: inline-block;
+  font-size: 20vw;
+  letter-spacing: 2vw;
+  margin: auto;
+  margin-bottom: 35%;
+}
+
 /*****************************************For gamelist*/
 .container {
   width: 100%;
@@ -124,17 +179,12 @@ main {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  white-space: 1vw;
-  text-align: center;
 }
 
 .game1,
 .game2,
 .game3,
 .game4 {
-  background-color: plum;
-  text-decoration: none;
-  color: white;
   width: 25%;
   margin: 2%;
   height: fixed;
@@ -145,8 +195,6 @@ main {
 .game2:hover,
 .game3:hover,
 .game4:hover {
-  background-color: purple;
-  transition: 250ms;
   animation: jump 2s ease 1;
 }
 
@@ -161,7 +209,6 @@ main {
 .game3 > h3,
 .game4 > h3 {
   font-size: 2vw;
-  letter-spacing: normal;
 }
 
 .game1 > p,
@@ -169,18 +216,6 @@ main {
 .game3 > p,
 .game4 > p {
   margin: 1vw;
-}
-
-@keyframes jump {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
 }
 
 /*****************************************For About Me content*/
@@ -277,9 +312,7 @@ textarea,
 form > label,
 ::placeholder,
 form > input {
-  color: white;
   font-size: 1.2em;
-  text-align: center;
 }
 
 textarea,
@@ -287,7 +320,6 @@ form > input {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: purple;
   width: 40vw;
 }
 
@@ -353,7 +385,6 @@ label {
 
 /*****************************************For Submit button*/
 .submit {
-  background-color: plum;
   border-style: outset;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -361,16 +392,9 @@ label {
 
 .submit:hover {
   scale: 1.05;
-  background-color: purple;
-  animation: bounce-in 1s ease 1;
 }
 
 /*****************************************For Genshin Impact page*/
-#genshininfo,
-#gotowebsite {
-  color: white;
-}
-
 #genshinlogo,
 #gotowebsite {
   display: flex;
@@ -391,7 +415,6 @@ label {
 
 /*****************************************For all star ratings (emoji's)*/
 .stars {
-  text-align: center;
   font-size: 2.5vw;
   margin-bottom: 35%;
 }
@@ -406,8 +429,6 @@ label {
   margin-left: 25%;
   margin-right: 5%;
   letter-spacing: 0.1vw;
-  color: white;
-  text-align: left;
 }
 
 #quote {
@@ -415,7 +436,6 @@ label {
   margin-right: 5%;
   font-size: 4vw;
   font-weight: bold;
-  color: plum;
 }
 
 #genshininfo2 {
@@ -423,8 +443,6 @@ label {
   margin-left: 5%;
   margin-right: 5%;
   letter-spacing: 0.1vw;
-  color: white;
-  text-align: left;
 }
 
 #gotowebsite {
@@ -432,18 +450,9 @@ label {
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 10px;
-  text-decoration: none;
-  background-color: plum;
-}
-
-#gotowebsite:hover {
-  animation: bounce-in 1s ease 1;
-  background-color: purple;
 }
 
 /*****************************************End of every page*/
 footer {
-  color: white;
   border-top: 1px solid plum;
-  text-align: end;
 }
