@@ -34,7 +34,7 @@ nav > ul > li > a {
 /*Hover changing color*/
 nav > ul > li > a:hover,
 .scroll_button > a:hover,
-h2 > a:hover,
+.dashes:hover,
 .mail > a:hover,
 .submit:hover,
 #gotowebsite:hover {
@@ -63,7 +63,7 @@ h1 {
 }
 
 /*Normal text color*/
-h2 > a,
+.dashes,
 .scroll_button > a,
 footer,
 .mail > a {
@@ -81,7 +81,7 @@ footer,
 #down {
   color: plum;
   font-size: 500%;
-  margin-top: 60vh;
+  margin-top: 0;
   margin-bottom: 10vh;
 }
 
@@ -90,11 +90,12 @@ main {
   text-align: center;
 }
 
-h2 {
+.dashes {
   display: inline-block;
   font-size: 20vw;
   letter-spacing: 2vw;
   margin: auto;
+  margin-bottom: 35%;
 }
 
 .dashes:hover {
@@ -140,7 +141,7 @@ h2 {
   text-decoration: none;
   color: plum;
   width: 25%;
-  margin: 1%;
+  margin: 2%;
   height: fixed;
   border-radius: 5%;
 }
@@ -160,9 +161,19 @@ h2 {
   height: auto;
 }
 
-.game > h3 {
+.game1 > h3,
+.game2 > h3,
+.game3 > h3,
+.game4 > h3 {
   font-size: 2vw;
   letter-spacing: normal;
+}
+
+.game1 > p,
+.game2 > p,
+.game3 > p,
+.game4 > p {
+  margin: 1vw;
 }
 
 @keyframes jump {
@@ -178,27 +189,91 @@ h2 {
 }
 
 /*For About Me content*/
-.aboutme > p {
-  display: inline-block;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  width: 70%;
-  text-align: left;
-  font-size: 1.5vw;
-  letter-spacing: 0.3vw;
-  color: plum;
+*::-webkit-scrollbar {
+  width: 0;
 }
 
-#profilepicture,
-#gamingconsole {
-  display: inline-block;
-  width: 13%;
-  border: 1px solid black;
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#slider {
+  color: plum;
+  text-decoration: none;
+  margin: 1em;
+  font-size: 200%;
+}
+
+#slider:hover {
+  color: purple;
+  transition: 250ms;
+  text-decoration: underline;
+}
+
+.carousel {
+  position: relative;
+  perspective: 100px;
+  color: plum;
+  margin: 1em;
+  height: 400px;
+  overflow-y: hidden;
+}
+
+.image_container {
+  height: max-content;
+  flex: 0 0 200px;
+  margin-right: 20px;
+}
+
+.image_container img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 #gamingconsole {
  rotate: 340deg;
+}
+
+.carousel_viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel_slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.carousel_snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  display: flex;
+  text-align: left;
+}
+
+.carousel_snapper > p {
+  flex: 1;
+  margin: 20px;
+  letter-spacing: 0.3vw;
+  text-align: left;
+  font-size: 1.5vw;
+  max-width: 100%;
 }
 
 /*For all star ratings (emoji's)*/
@@ -332,4 +407,9 @@ label {
   text-decoration: none;
   background-color: darkslategray;
   border: 1px solid black;
+}
+
+footer {
+  border-top: 1px solid white;
+  text-align: end;
 }

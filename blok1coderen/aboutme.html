@@ -22,30 +22,68 @@
       <h1>About Me</h1>
       <p class="description">Do you want to know where I came from and why I made this website?</p>
       <p class="scroll_button">
-        <a href="#down">Learn More</a>
+        <a href="#slider">Learn More</a>
       </p>
-      <h2 class="dashes"><a href="index.html">-</a></h2>
-      <h2 class="dashes"><a href="aboutme.html">-</a></h2>
-      <h2 class="dashes"><a href="leaveyourinput.html">-</a></h2>
-      <section class="aboutme">
-        <h2 id="down">About me</h2>
-        <p id="lefttext">
-          My name is Kaylee Hoek and I'm currently studying on the HVA in Amsterdam. This is my first project and for this project I have to make a website based on my interests. I decided to make my
-          website about games that I played. I rate these games and give my own and honest opinion out them.
-          I love to play games in my free time. I play all sorts of games. I like horror games as much as I like casual or adventerous games. I am also curious as to what kind of games there are and if
-          there are new upcoming games I have probably one of the firsts to know. If I have not rated a game yet that you would like me to play and rate you should let me know in the "leave your input"
-          section of this website.
-        </p>
-        <img id="profilepicture" src="/blok1coderen/images/me.jpg" alt="Photo from Kaylee Hoek" />
-        <img id="gamingconsole" src="/blok1coderen/images/xboxcontroller.png" alt="Gaming Console">
-        <p id="righttext">Hopefully you can get some inspiration from me as to what games you haven't played and get the information that you were seeking for. Thank you for visiting and good luck with gaming!</p>
+      <nav>
+        <a class="dashes" href="index.html">-</a>
+        <a class="dashes" href="aboutme.html">-</a>
+        <a class="dashes" href="leaveyourinput.html">-</a>
+      </nav>
+      <nav>
+        <a id="slider" href="#carousel_slide1">About Me</a>
+        <a id="slider" href="#carousel_slide2">Why?</a>
+        <a id="slider" href="#carousel_slide3">Contact</a>
+      </nav>
+      <section class="carousel" aria-label="Information">
+        <ol class="carousel_viewport">
+          <li id="carousel_slide1" tabindex="0" class="carousel_slide">
+            <div class="carousel_snapper">
+              <section class="image_container">
+                <img src="/blok1coderen/images/me.jpg" alt="Photo from Kaylee Hoek" />
+              </section>
+              <div class="text_container">
+                <p>My name is Kaylee Hoek and I currently (2023) am studying at the HVA in Amsterdam, the Netherlands. I have a few hobbies that I like to share with you.</p>
+                <p>
+                  One of my most practised hobbies would be playing the ukulele. I love making music as well as improvising and making something of my own. It gives me motivation to keep on following
+                  my dreams.
+                </p>
+                <p>
+                  Another one of my big hobbies/lifestyle would be that I adore my dog Baloo. I care for him most of the time as well as: feed him, walk him, cuddle him and care for him. He is my
+                  buddy for life and because of him I believe everyone can be kind to you as long as you keep giving.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li id="carousel_slide2" tabindex="0" class="carousel_slide">
+            <div class="carousel_snapper">
+              <div class="text_container">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus doloribus dicta, excepturi, ex molestiae provident aspernatur ducimus molestias nobis numquam repudiandae
+                  sint in ipsum dolores! Ab cumque nobis reprehenderit.
+                </p>
+              </div>
+              <section id="gamingconsole" class="image_container">
+                <img src="/blok1coderen/images/xboxcontroller.png" alt="Gaming Console" />
+              </section>
+            </div>
+          </li>
+          <li id="carousel_slide3" tabindex="0" class="carousel_slide">
+            <div class="carousel_snapper">
+              <section class="image_container">
+                <img src="/blok1coderen/images/contact.jpg" alt="Photo from Kaylee Hoek" />
+              </section>
+              <div class="text_container">
+                <p>LinkedIn:</p>
+                <p>Instagram:</p>
+                <p>E-mail:</p>
+              </div>
+            </div>
+          </li>
+        </ol>
       </section>
     </main>
     <footer>
-      <p>Made by: Kaylee Hoek</p>
-      <p class="mail">
-        <a href="mailto:kayleehoek04.17@gmail.com">kayleehoek04.17@gmail.com</a>
-      </p>
+      <p>©Made by: Kaylee Hoek</p>
     </footer>
   </body>
 </html>
