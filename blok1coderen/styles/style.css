@@ -1,4 +1,4 @@
-/*For the whole website*/
+/*****************************************For the whole website*/
 body {
   font-family: "Comfortaa", sans-serif;
   background-image: url("/blok1coderen/images/background.png");
@@ -8,14 +8,14 @@ body {
   background-attachment: local;
 }
 
-/*Logo*/
+/*****************************************Logo*/
 .logo {
   max-width: 10%;
   height: auto;
   position: absolute;
 }
 
-/*Navigation*/
+/*****************************************Navigation*/
 nav > ul {
   text-align: end;
 }
@@ -31,7 +31,7 @@ nav > ul > li > a {
   font-size: 20px;
 }
 
-/*Hover changing color*/
+/*****************************************Hover changing color*/
 nav > ul > li > a:hover,
 .scroll_button > a:hover,
 .dashes:hover,
@@ -42,7 +42,7 @@ nav > ul > li > a:hover,
   transition: 250ms;
 }
 
-/*Head of the page*/
+/*****************************************Head of the page*/
 h1 {
   text-align: center;
   font-size: 500%;
@@ -62,7 +62,7 @@ h1 {
   margin: auto;
 }
 
-/*Normal text color*/
+/*****************************************Normal text color*/
 .dashes,
 .scroll_button > a,
 footer,
@@ -71,7 +71,7 @@ footer,
   color: plum;
 }
 
-/*Scrolling down*/
+/*****************************************Scrolling down*/
 .scroll_button > a {
   border: 2px solid purple;
   border-radius: 6px;
@@ -85,7 +85,7 @@ footer,
   margin-bottom: 10vh;
 }
 
-/*Dashes for navigation + h2 headline*/
+/*****************************************Dashes for navigation + h2 headline*/
 main {
   text-align: center;
 }
@@ -99,7 +99,7 @@ main {
 }
 
 .dashes:hover {
-  animation: bounce-in 1s ease infinite;
+  animation: bounce-in 1s ease 1;
 }
 
 @keyframes bounce-in {
@@ -119,7 +119,7 @@ main {
   }
 }
 
-/*For gamelist*/
+/*****************************************For gamelist*/
 .container {
   width: 100%;
   flex: 0 0 35%;
@@ -152,7 +152,7 @@ main {
 .game4:hover {
   color: purple;
   transition: 250ms;
-  animation: jump 2s ease infinite;
+  animation: jump 2s ease 1;
 }
 
 #gamelogo {
@@ -188,7 +188,7 @@ main {
   }
 }
 
-/*For About Me content*/
+/*****************************************For About Me content*/
 *::-webkit-scrollbar {
   width: 0;
 }
@@ -277,13 +277,7 @@ ol, li {
   max-width: 100%;
 }
 
-/*For all star ratings (emoji's)*/
-.stars {
-  text-align: center;
-  font-size: 2.5vw;
-}
-
-/*For LeaveYourInput*/
+/*****************************************For LeaveYourInput*/
 .opinion,
 textarea,
 form > label,
@@ -323,7 +317,7 @@ label {
   margin: 0.5rem;
 }
 
-/*Star rating*/
+/*****************************************Star rating*/
 .star-rating {
   display: flex;
   justify-content: center;
@@ -360,21 +354,24 @@ label {
 .star-rating > label:hover ~ label > img.gold {
   opacity: 1;
   scale: 1.2;
+  animation: bounce-in 500ms ease 1;
 }
 
-/*For Submit button*/
+/*****************************************For Submit button*/
 .submit {
   border-style: outset;
   border: 1px solid black;
   border-radius: 10px;
+  margin-bottom: 5%;
 }
 
 .submit:hover {
   scale: 1.05;
   background-color: gray;
+  animation: bounce-in 1s ease 1;
 }
 
-/*For Genshin Impact page*/
+/*****************************************For Genshin Impact page*/
 #genshininfo,
 #gotowebsite {
   color: plum;
@@ -392,24 +389,65 @@ label {
   height: auto;
   margin-left: 25%;
   margin-right: 25%;
-  border: 1px solid plum;
 }
 
 .gametitle {
   margin: 5vw;
 }
 
+/*****************************************For all star ratings (emoji's)*/
+.stars {
+  text-align: center;
+  font-size: 2.5vw;
+  margin-bottom: 35%;
+}
+
+#paimon {
+  display: flex;
+  position: absolute;
+  max-width: 25%;
+}
+
 #genshininfo {
-  letter-spacing: 0.3vw;
-  margin: 5em;
+  margin-left: 25%;
+  margin-right: 5%;
+  letter-spacing: 0.1vw;
+  color: plum;
+  text-align: left;
+}
+
+#quote {
+  margin-left: 25%;
+  margin-right: 5%;
+  font-size: 4vw;
+  font-weight: bold;
+  color: plum;
+}
+
+#genshininfo2 {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  letter-spacing: 0.1vw;
+  color: plum;
+  text-align: left;
 }
 
 #gotowebsite {
+  margin: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px;
   text-decoration: none;
   background-color: darkslategray;
-  border: 1px solid black;
 }
 
+#gotowebsite:hover {
+  animation: bounce-in 1s ease 1;
+  background-color: gray;
+}
+
+/*****************************************End of every page*/
 footer {
   border-top: 1px solid white;
   text-align: end;
