@@ -225,6 +225,7 @@ ol, li {
   height: max-content;
   flex: 0 0 200px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .image_container img {
@@ -270,7 +271,7 @@ ol, li {
 .carousel_snapper > p {
   flex: 1;
   margin: 20px;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.2vw;
   text-align: left;
   font-size: 1.5vw;
   max-width: 100%;
