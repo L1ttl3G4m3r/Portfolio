@@ -10,7 +10,7 @@ body {
 
 /*****************************************Logo*/
 .logo {
-  max-width: 10%;
+  max-width: 4%;
   height: auto;
   position: absolute;
 }
@@ -18,6 +18,7 @@ body {
 /*****************************************Navigation*/
 nav > ul {
   text-align: end;
+  background-color: plum;
 }
 
 nav > ul > li {
@@ -27,19 +28,12 @@ nav > ul > li {
 
 nav > ul > li > a {
   text-decoration: none;
-  color: plum;
+  color: white;
   font-size: 20px;
 }
 
-/*****************************************Hover changing color*/
-nav > ul > li > a:hover,
-.scroll_button > a:hover,
-.dashes:hover,
-.mail > a:hover,
-.submit:hover,
-#gotowebsite:hover {
-  color: purple;
-  transition: 250ms;
+nav > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 /*****************************************Head of the page*/
@@ -62,24 +56,22 @@ h1 {
   margin: auto;
 }
 
-/*****************************************Normal text color*/
-.dashes,
-.scroll_button > a,
-footer,
-.mail > a {
-  text-decoration: none;
-  color: plum;
-}
-
 /*****************************************Scrolling down*/
 .scroll_button > a {
-  border: 2px solid purple;
+  background-color: plum;
+  text-decoration: none;
+  color: white;
   border-radius: 6px;
   padding: 5px;
 }
 
+.scroll_button > a:hover {
+  background-color: purple;
+  transition: 250ms;
+}
+
 #down {
-  color: plum;
+  color: white;
   font-size: 500%;
   margin-top: 0;
   margin-bottom: 10vh;
@@ -91,6 +83,8 @@ main {
 }
 
 .dashes {
+  color: plum;
+  text-decoration: none;
   display: inline-block;
   font-size: 20vw;
   letter-spacing: 2vw;
@@ -99,6 +93,7 @@ main {
 }
 
 .dashes:hover {
+  color: purple;
   animation: bounce-in 1s ease 1;
 }
 
@@ -137,9 +132,9 @@ main {
 .game2,
 .game3,
 .game4 {
-  background-color: whitesmoke;
+  background-color: plum;
   text-decoration: none;
-  color: plum;
+  color: white;
   width: 25%;
   margin: 2%;
   height: fixed;
@@ -150,7 +145,7 @@ main {
 .game2:hover,
 .game3:hover,
 .game4:hover {
-  color: purple;
+  background-color: purple;
   transition: 250ms;
   animation: jump 2s ease 1;
 }
@@ -200,14 +195,13 @@ ol, li {
 }
 
 #slider {
-  color: plum;
+  color: white;
   text-decoration: none;
   margin: 1em;
   font-size: 200%;
 }
 
 #slider:hover {
-  color: purple;
   transition: 250ms;
   text-decoration: underline;
 }
@@ -215,7 +209,7 @@ ol, li {
 .carousel {
   position: relative;
   perspective: 100px;
-  color: plum;
+  color: white;
   margin: 1em;
   height: 400px;
   overflow-y: hidden;
@@ -283,7 +277,7 @@ textarea,
 form > label,
 ::placeholder,
 form > input {
-  color: plum;
+  color: white;
   font-size: 1.2em;
   text-align: center;
 }
@@ -293,7 +287,7 @@ form > input {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: darkslategray;
+  background-color: purple;
   width: 40vw;
 }
 
@@ -359,22 +353,22 @@ label {
 
 /*****************************************For Submit button*/
 .submit {
+  background-color: plum;
   border-style: outset;
-  border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 5%;
 }
 
 .submit:hover {
   scale: 1.05;
-  background-color: gray;
+  background-color: purple;
   animation: bounce-in 1s ease 1;
 }
 
 /*****************************************For Genshin Impact page*/
 #genshininfo,
 #gotowebsite {
-  color: plum;
+  color: white;
 }
 
 #genshinlogo,
@@ -412,7 +406,7 @@ label {
   margin-left: 25%;
   margin-right: 5%;
   letter-spacing: 0.1vw;
-  color: plum;
+  color: white;
   text-align: left;
 }
 
@@ -429,7 +423,7 @@ label {
   margin-left: 5%;
   margin-right: 5%;
   letter-spacing: 0.1vw;
-  color: plum;
+  color: white;
   text-align: left;
 }
 
@@ -439,16 +433,17 @@ label {
   margin-bottom: 5%;
   padding: 10px;
   text-decoration: none;
-  background-color: darkslategray;
+  background-color: plum;
 }
 
 #gotowebsite:hover {
   animation: bounce-in 1s ease 1;
-  background-color: gray;
+  background-color: purple;
 }
 
 /*****************************************End of every page*/
 footer {
-  border-top: 1px solid white;
+  color: white;
+  border-top: 1px solid plum;
   text-align: end;
 }
