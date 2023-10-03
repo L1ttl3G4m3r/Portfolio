@@ -1,4 +1,13 @@
-/*****************************************For the whole website*/
+/*For the whole website*/
+*::-webkit-scrollbar {
+  display: none; /*Google Chrome, Safari and Opera*/
+}
+
+* {
+  -ms-overflow-style: none; /*Internet Explorer and Microsoft Edge*/
+  scrollbar-width: none; /*Firefox*/
+}
+
 body {
   font-family: "Comfortaa", sans-serif;
   background-image: url("/blok1coderen/images/background.png");
@@ -8,7 +17,7 @@ body {
   background-attachment: local;
 }
 
-/*****************************************Keyframes*/
+/*Keyframes*/
 @keyframes bounce-in {
   0% {
     opacity: 0;
@@ -44,7 +53,7 @@ body {
   animation: bounce-in 1s ease 1;
 }
 
-/*****************************************Color for the whole website*/
+/*Color for the whole website*/
 nav > ul > li > a,
 .scroll_button > a,
 #down,
@@ -81,7 +90,7 @@ textarea, form > input,
   transition: 250ms;
 }
 
-/*****************************************Text decoration*/
+/*Text decoration*/
 nav > ul > li > a,
 .scroll_button > a,
 .dashes,
@@ -94,7 +103,7 @@ nav > ul > li > a:hover {
   text-decoration: underline;
 }
 
-/*****************************************Text align*/
+/*Text align*/
 h1,
 .description, .scroll_button,
 main,
@@ -113,14 +122,14 @@ footer {
   text-align: left;
 }
 
-/*****************************************Logo*/
+/*Logo*/
 .logo {
   max-width: 4%;
   height: auto;
   position: absolute;
 }
 
-/*****************************************Navigation*/
+/*Navigation*/
 nav > ul > li {
   display: inline-block;
   padding: 1vw 1vh;
@@ -130,7 +139,7 @@ nav > ul > li > a {
   font-size: 20px;
 }
 
-/*****************************************Head of the page*/
+/*Head of the page*/
 h1 {
   font-size: 500%;
   font-weight: bold;
@@ -140,7 +149,7 @@ h1 {
 .description,
 .scroll_button {
   padding: 0;
-  margin: 10;
+  margin: 10px;
 }
 
 .description {
@@ -148,7 +157,7 @@ h1 {
   margin: auto;
 }
 
-/*****************************************Scrolling down*/
+/*Scrolling down*/
 .scroll_button > a {
   border-radius: 6px;
   padding: 5px;
@@ -160,7 +169,7 @@ h1 {
   margin-bottom: 10vh;
 }
 
-/*****************************************Dashes for navigation + h2 headline*/
+/*Dashes for navigation + h2 headline*/
 .dashes {
   display: inline-block;
   font-size: 20vw;
@@ -169,7 +178,7 @@ h1 {
   margin-bottom: 35%;
 }
 
-/*****************************************For gamelist*/
+/*For gamelist*/
 .gameinfo {
   display: flex;
   justify-content: space-around;
@@ -184,7 +193,6 @@ h1 {
 #game4 {
   width: 25%;
   margin: 2%;
-  height: fixed;
   border-radius: 5%;
 }
 
@@ -215,11 +223,7 @@ h1 {
   margin: 1vw;
 }
 
-/*****************************************For About Me content*/
-*::-webkit-scrollbar {
-  width: 0;
-}
-
+/*For About Me content*/
 ol, li {
   list-style: none;
   margin: 0;
@@ -244,7 +248,6 @@ ol, li {
   color: white;
   margin: 1em;
   height: 400px;
-  overflow-y: hidden;
 }
 
 .image_container {
@@ -255,10 +258,6 @@ ol, li {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-#gamingconsole {
- rotate: 340deg;
 }
 
 .carousel_viewport {
@@ -300,7 +299,7 @@ ol, li {
   max-width: 100%;
 }
 
-/*****************************************For LeaveYourInput*/
+/*For LeaveYourInput*/
 .opinion,
 textarea,
 form > label,
@@ -337,7 +336,7 @@ label {
   margin: 0.5rem;
 }
 
-/*****************************************Star rating*/
+/*Star rating*/
 .star-rating {
   display: flex;
   justify-content: center;
@@ -373,11 +372,11 @@ label {
 .star-rating > input:checked ~ label > img.gold,
 .star-rating > label:hover ~ label > img.gold {
   opacity: 1;
-  scale: 1.2;
+  transform: scale(1.2);
   animation: bounce-in 500ms ease 1;
 }
 
-/*****************************************For Submit button*/
+/*For Submit button*/
 .submit {
   border-style: outset;
   border-radius: 10px;
@@ -385,10 +384,10 @@ label {
 }
 
 .submit:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
-/*****************************************For Genshin Impact page*/
+/*For Genshin Impact page*/
 #genshinlogo,
 #gotowebsite {
   display: flex;
@@ -413,7 +412,7 @@ iframe {
   border: 0;
 }
 
-/*****************************************For all star ratings (emoji's)*/
+/*For all star ratings (emoji's)*/
 .stars {
   font-size: 2.5vw;
   margin-bottom: 35%;
@@ -452,7 +451,7 @@ iframe {
   padding: 10px;
 }
 
-/*****************************************End of every page*/
+/*End of every page*/
 footer {
   border-top: 1px solid plum;
 }
