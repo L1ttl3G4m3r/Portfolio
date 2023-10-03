@@ -48,7 +48,7 @@ body {
 nav > ul > li > a,
 .scroll_button > a,
 #down,
-.game1, .game2, .game3, .game4,
+#game1, #game2, #game3, #game4,
 .opinion, textarea, form > label, ::placeholder, form > input,
 #genshininfo, #gotowebsite, #genshininfo, #genshininfo2,
 footer {
@@ -66,7 +66,7 @@ footer {
 
 nav > ul,
 .scroll_button > a,
-.game1, .game2, .game3, .game4,
+#game1, #game2, #game3, #game4,
 textarea, form > input,
 .submit,
 #gotowebsite {
@@ -74,7 +74,7 @@ textarea, form > input,
 }
 
 .scroll_button > a:hover,
-.game1:hover, .game2:hover, .game3:hover, .game4:hover,
+#game1:hover, #game2:hover, #game3:hover, #game4:hover,
 .submit:hover,
 #gotowebsite:hover {
   background-color: purple;
@@ -85,7 +85,7 @@ textarea, form > input,
 nav > ul > li > a,
 .scroll_button > a,
 .dashes,
-.game1, .game2, .game3, .game4,
+#game1, #game2, #game3, #game4,
 #gotowebsite {
   text-decoration: none;
 }
@@ -170,51 +170,48 @@ h1 {
 }
 
 /*****************************************For gamelist*/
-.container {
-  width: 100%;
-  flex: 0 0 35%;
-}
-
 .gameinfo {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
+  width: 100%;
+  flex: 0 0 35%;
 }
 
-.game1,
-.game2,
-.game3,
-.game4 {
+#game1,
+#game2,
+#game3,
+#game4 {
   width: 25%;
   margin: 2%;
   height: fixed;
   border-radius: 5%;
 }
 
-.game1:hover,
-.game2:hover,
-.game3:hover,
-.game4:hover {
+#game1:hover,
+#game2:hover,
+#game3:hover,
+#game4:hover {
   animation: jump 2s ease 1;
 }
 
-#gamelogo {
+.gamelogo {
   margin-top: 10%;
   width: 80%;
   height: auto;
 }
 
-.game1 > h3,
-.game2 > h3,
-.game3 > h3,
-.game4 > h3 {
+#game1 > h3,
+#game2 > h3,
+#game3 > h3,
+#game4 > h3 {
   font-size: 2vw;
 }
 
-.game1 > p,
-.game2 > p,
-.game3 > p,
-.game4 > p {
+#game1 > p,
+#game2 > p,
+#game3 > p,
+#game4 > p {
   margin: 1vw;
 }
 
