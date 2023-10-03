@@ -226,14 +226,14 @@ ol, li {
   padding: 0;
 }
 
-#slider {
+.slider {
   color: white;
   text-decoration: none;
   margin: 1em;
   font-size: 200%;
 }
 
-#slider:hover {
+.slider:hover {
   transition: 250ms;
   text-decoration: underline;
 }
@@ -252,9 +252,6 @@ ol, li {
   flex: 0 0 200px;
   margin-right: 20px;
   margin-left: 20px;
-}
-
-.image_container img {
   width: 100%;
   height: auto;
   border-radius: 10px;
