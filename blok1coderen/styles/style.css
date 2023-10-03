@@ -456,3 +456,8 @@ label {
 footer {
   border-top: 1px solid plum;
 }
+
+#reference {
+  text-align: left;
+  position: absolute;
+}
