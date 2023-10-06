@@ -149,12 +149,16 @@ h1 {
 .description,
 .scroll_button {
   padding: 0;
-  margin: 10px;
+  margin: 0;
 }
 
 .description {
-  width: 40em;
+  width: 80%;
   margin: auto;
+}
+
+.scroll_button {
+  margin-top: 5%;
 }
 
 /*Scrolling down*/
