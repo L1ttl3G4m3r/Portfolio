@@ -7,7 +7,14 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: white;
+}
+
+#home {
     background-image: url(/Schoonschip/afbeeldingen/achtergrond.png);
+}
+
+#concept {
+    background-image: url(/Schoonschip/afbeeldingen/achtergrondconcept.png);
 }
 
 .logo {
@@ -55,6 +62,21 @@ p {
     margin-right: 33px;
 }
 
+#p1, #p2, #p4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#p3, #p5 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#uithap1 {
+    float: right;
+    margin: 0;
+}
+
 div.scroll-container {
     background-color: transparent;
     overflow: auto;
@@ -66,7 +88,7 @@ div.scroll-container img {
     padding: 5px;
 }
 
-.meerinfo {
+.knop {
     margin-left: 87.5px;
     animation: aandacht 2s ease 0s infinite normal forwards;
 }
