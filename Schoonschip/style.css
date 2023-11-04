@@ -17,6 +17,10 @@ body {
     background-image: url(/Schoonschip/afbeeldingen/achtergrondconcept.png);
 }
 
+#tips {
+    background-image: url(/Schoonschip/afbeeldingen/achtergrondtips.png);
+}
+
 .logo {
     width: auto;
     height: 64.2px;
@@ -62,14 +66,18 @@ p {
     margin-right: 33px;
 }
 
-#p1, #p2, #p4 {
+#c1, #c2, #c4 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-#p3, #p5 {
+#c3, #c5 {
     margin-top: 15px;
     margin-bottom: 0;
+}
+
+#t1 {
+    margin-top: 15px;
 }
 
 #uithap1 {
