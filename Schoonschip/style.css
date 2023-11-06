@@ -55,7 +55,7 @@ h2 {
     margin-bottom: 5px;
 }
 
-p {
+p, label {
     color: white;
     font-size: 13px;
     font-style: normal;
@@ -80,9 +80,39 @@ p {
     margin-top: 15px;
 }
 
-#uithap1 {
+#uithap1, #uithap2 {
     float: right;
     margin: 0;
+}
+
+#checkbox {
+    list-style: none;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+#checkbox > li {
+    margin: 10px 0 10px 0;
+}
+
+input {
+    appearance: none;
+    vertical-align: top;
+}
+
+.checkbox1::before {
+    content: url(/Schoonschip/afbeeldingen/unchecked.svg);
+}
+
+.checkbox1:checked {
+    content: url(/Schoonschip/afbeeldingen/checked.svg);
+}
+
+label {
+    width: 90px;
+    height: 70px;
+    margin: 0;
+    display: inline-block;
 }
 
 div.scroll-container {
