@@ -100,11 +100,19 @@ input {
     vertical-align: top;
 }
 
-.checkbox1::before {
+#checkbox1::before,
+#checkbox2::before,
+#checkbox3::before,
+#checkbox4::before,
+#checkbox5::before {
     content: url(/Schoonschip/afbeeldingen/unchecked.svg);
 }
 
-.checkbox1:checked {
+#checkbox1:checked,
+#checkbox2:checked,
+#checkbox3:checked,
+#checkbox4:checked,
+#checkbox5:checked {
     content: url(/Schoonschip/afbeeldingen/checked.svg);
 }
 
