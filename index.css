@@ -181,7 +181,7 @@ h1 {
 }
 
 #down, #showcasing,
-#myprojects,
+#designp, #myprojects,
 #showcasinga {
   display: flex;
   justify-content: center;
@@ -191,11 +191,11 @@ h1 {
   margin-left: 10%;
 }
 
-.designp {
+#designh {
   display: flex;
   justify-content: center;
   max-width: 40%;
-  margin-left: 25%;
+  margin-left: 28%;
   text-align: center;
 }
 
