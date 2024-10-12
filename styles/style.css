@@ -222,6 +222,12 @@ p {
   font-size: 2em;
 }
 
+@media (max-width: 768px) {
+  p {
+    font-size: 1em;
+  }
+}
+
 /*****************/
 /* INTRO SECTION */
 /*****************/
