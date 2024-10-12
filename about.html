@@ -2,78 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Kaylee Hoek">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Kaylee Hoek</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" type="image/png" href="./images/webLogo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <head>
-        <nav class="top">
-          <ul>
-            <a href="index.html"><img src="/Images/Logo.png" alt="Logo"></a>
-          </ul>
-          <ul class="navigation">
-            <li><a href="interior.html">Interior</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-          <ul class="links">
-            <li><a href="https://www.behance.net/kayleehoekme"><img src="/Images/Behance.svg" alt="Behance"></a></li>
-            <li><a href="https://www.linkedin.com/in/kaylee-hoek-605275218/"><img src="/Images/LinkedIn.svg" alt="LinkedIn"></a></li>
-            <li><a href=""><img src="/Images/Instagram.svg" alt="Instagram"></a></li>
-            <li><a href="https://pin.it/44ATp2OJC"><img src="/Images/Pinterest.svg" alt="Pinterest"></a></li>
-          </ul>
-        </nav>
-      </head>
-      <div class="startingimage">
-        <img class="backgroundimage" src="/ImagesAbout/AboutStart.png" alt="Picture of the sunset">
-        <div class="content">
-          <p id="p1">Designer by heart.</p>
-          <h1 class="designstart">About</h1>
-          <p id="p2">Creative by mind.</p>
-        </div>
-      </div>
-      <main>
-        <img class="me" src="/ImagesAbout/Me2.png" alt="Me">
-        <img id="ageometry1" src="/ImagesAbout/Geometry1.svg" alt="Geometry">
-        <div class="about">
-          <h2>Who am I?</h2>
-          <p>My name is Kaylee Hoek (19) and I currently am studying at HVA in Amsterdam, the Netherlands. I graduated from Jan des Bouvrie College (which is also located in Amsterdam) as an Interior Advisor. However, I want to do more in the digital world. That doesn't mean that I will never give Interior advice, but my main career is focused on digital projects like 3D renders, applications and websites. Feel free to contact me about any sort of questions you might have.</p>
-          <a id="mail" href="mailto:kayleehoek04.17@gmail.com"><img src="/ImagesAbout/Mail.png" alt="Envelope">kayleehoek04.17@gmail.com</a>
-        </div>
-        <img id="ageometry2" src="/ImagesAbout/Geometry2.svg" alt="Geometry">
-        <h2 id="showcasinga">Showcasing my diverse range of work</h2>
-        <ul class="showcasing">
-            <li><img src="/ImagesAbout/3DDesign.svg" alt="Icon"><h3>3D Design</h3><p>Making renders as well as animations in Blender.</p></li>
-            <li><img src="/ImagesAbout/WebDevelopment.svg" alt="Icon"><h3>Web Development</h3><p>Currently coding in HTML and CSS. Still learning Javascript.</p></li>
-            <li><img src="/ImagesAbout/UIUXDesign.svg" alt="Icon"><h3>UI / UX Design</h3><p>Using Figma and other apps to test for your audience and make a fitting design.</p></li>
-            <li><img src="/ImagesAbout/InteriorDesign.svg" alt="Icon"><h3>Interior Design</h3><p>Working in Vectorworks and Procreate to make trending designs for your needs.</p></li>
-        </ul>
-        <img id="ageometry3" src="/ImagesAbout/Geometry3.svg" alt="Geometry">
-        <img id="experienceinternshipseducation" src="/ImagesAbout/Experience,Internships&Education.png" alt="Experience, Internships and Education">
-        <img id="ageometry4" src="/ImagesAbout/Geometry4.svg" alt="Geometry">
-      </main>
-      <footer>
-        <nav class="bottom">
-          <img class="logomark" src="/Images/Logomark.png" alt="Logomark">
-          <ul class="bottomnavigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="interior.html">Interior</a></li>
-            <li><a href="design.html">Design</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-          <img id="line" src="/Images/Line.svg" alt="Line">
-          <div class="bottomalign">
-            <p>© Copyright 2024 Kaylee Hoek</p>
-            <ul class="copyright">
-              <li><a href="https://www.behance.net/kayleehoekme"><img src="/Images/Behance.svg" alt="Behance"></a></li>
-              <li><a href="https://www.linkedin.com/in/kaylee-hoek-605275218/"><img src="/Images/LinkedIn.svg" alt="LinkedIn"></a></li>
-              <li><a href=""><img src="/Images/Instagram.svg" alt="Instagram"></a></li>
-              <li><a href="https://pin.it/44ATp2OJC"><img src="/Images/Pinterest.svg" alt="Pinterest"></a></li>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./images/logo1.svg" alt="Logo Kaylee Hoek"></a>
+
+            <input type="checkbox" id="toggle" aria-hidden="true">
+            <label for="toggle" aria-hidden="true">
+                <img class="unchecked" src="./images/unchecked.svg" alt="Unchecked box">
+                <img class="checked" src="./images/checked.svg" alt="Checked box">
+            </label>
+
+            <ul>
+                <li id="nav1"><a href="./interior.html">Interior</a></li>
+                <li id="nav2"><a href="./design.html">Design</a></li>
+                <li id="nav3"><a href="./about.html">About</a></li>
             </ul>
-        </div>
         </nav>
-      </footer>
+    </header>
+
+    <main>
+        <h1 id="about">About</h1>
+        <p>I'm a 20-year-old student at HVA, pursuing a degree in Communication and Multimedia.</p>
+        <img id="happy2" src="./images/happy2.svg" alt="Happy cartoon like face">
+        <p>Before this, I graduated from Jan des Bouvrie College, where I developed my passion for design. If you have any questions or would like to connect, feel free to reach out!</p>
+        <p id="mail"><img src="./images/envelope.svg" alt="Icon of a envelope"><a href="mailto:kayleehoek04.17@gmail.com">kayleehoek04.17@gmail.com</a></p>
+        
+        <!-- Carousel -->
+        <article class="carousel-wrapper">
+            <ul class="carousel-list">
+                <li>
+                    <img src="./images/carousel1.svg" alt="Icon of a drawing pencil">
+                    <h2>Interior Design</h2>
+                    <p>I design functional and beautiful spaces, using <strong>Procreate</strong> for sketching concepts and <strong>Vectorworks</strong> for precise 2D and 3D plans. These tools allow me to transform ideas into immersive environments that inspire and elevate everyday living.</p>
+                </li>
+                <li>
+                    <img src="./images/carousel2.svg" alt="Icon of a desktop">
+                    <h2>Digital Design</h2>
+                    <p>I craft engaging digital experiences, using <strong>Figma</strong> for collaborative design and <strong>Adobe tools</strong> for detailed visuals and branding. These platforms help me create cohesive, intuitive designs that captivate and connect with users.</p>
+                </li>
+                <li>
+                    <img src="./images/carousel3.svg" alt="Icon of coding">
+                    <h2>Front-end Development</h2>
+                    <p>I bring designs to life through <strong>HTML</strong> and <strong>CSS</strong>, creating responsive and visually appealing websites. While I'm fluent in these languages, I'm continuously expanding my skills in <strong>JavaScript</strong> to add more interactivity and dynamic functionality to my projects.</p>
+                </li>
+                <li>
+                    <img src="./images/carousel4.svg" alt="Icon of a 3D cube">
+                    <h2>3D Design</h2>
+                    <p>I use <strong>Blender</strong> to create simple, aesthetic 3D designs that focus on clean lines and impactful visuals. My approach emphasizes minimalist forms, allowing the beauty of simplicity to shine through in each project.</p>
+                </li>
+            </ul>
+            <nav class="carousel-nav left"><img src="./images/downButton.svg" alt="Navigation button left"></nav>
+            <nav class="carousel-nav right"><img src="./images/downButton.svg" alt="Navigation button right"></nav>
+        </article>
+        
+        <ul id="cv">
+            <li><img src="./images/experience.svg" alt="Experience in Amac and Jumbo"></li>
+            <li><img src="./images/internships.svg" alt="Internships in Haco and Pronto Wonen"></li>
+            <li><img src="./images/education.svg" alt="Education on University of Applied Sciences and Jan des Bouvrie College"></li>
+        </ul>
+    </main>
+
+    <footer>
+        <img src="./images/logo2.svg" alt="Logo Kaylee Hoek">
+
+        <ul>
+            <li title="Béhance"><a href="https://www.behance.net/kayleehoekme"><img src="./images/béhance.svg" alt="Béhance"></a></li>
+            <li title="Pinterest"><a href="https://nl.pinterest.com/ksgurl17/"><img src="./images/pinterest.svg" alt="Béhance"></a></li>
+            <li title="LinkedIn"><a href="https://www.linkedin.com/in/kaylee-hoek-605275218/"><img src="./images/linkedin.svg" alt="LinkedIn"></a></li>
+            <li title="Instagram"><a href="https://www.instagram.com/ksgurl.24/"><img src="./images/instagram.svg" alt="Instagram"></a></li>
+        </ul>
+        <p id="copyright">©Copyright 2024 Kaylee Hoek</p>
+    </footer>
+    
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
