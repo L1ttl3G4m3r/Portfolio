@@ -14,7 +14,19 @@ app.set('view engine', 'ejs');
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { page: 'home' });
+});
+
+app.get("/interior", (req, res) => {
+  res.render("interior", { page: 'interior' });
+});
+
+app.get("/design", (req, res) => {
+  res.render("design", { page: 'design' });
+});
+
+app.get("/coding", (req, res) => {
+  res.render("coding", { page: 'coding' });
 });
 
 app.listen(port, () => {

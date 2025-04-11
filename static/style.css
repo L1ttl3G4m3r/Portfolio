@@ -90,6 +90,10 @@ footer {
   width: 100%;
 }
 
+.navLinks a.active::after {
+  width: 100%;
+}
+
 .indexBtn {
   grid-column: 3;
   display: flex;
