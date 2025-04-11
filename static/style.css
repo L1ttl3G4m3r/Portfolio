@@ -1,29 +1,37 @@
 :root {
-  --off-white: #F0FFFF;
-  --off-black: #1C1D1D;
+  --off-white: #f0ffff;
+  --off-black: #1c1d1d;
+  --yellow: #FFECA0;
+  --pink: #E8A8A0;
   --header-height: 10vh;
+  --footer-height: 10vh;
 }
 
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   color: var(--off-black);
   background-color: var(--off-white);
+  font-family: Arial, sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
-/**Font styling**/
-.sacramento-regular {
-  font-family: "Sacramento", cursive;
-  font-weight: 400;
-  font-style: normal;
+header {
+  flex-shrink: 0;  /* Prevents the header from shrinking */
 }
 
-.alice-regular {
-  font-family: "Alice", serif;
-  font-weight: 400;
-  font-style: normal;
+footer {
+  flex-shrink: 0;  /* Prevents the footer from shrinking */
+  margin-top: auto;
 }
 
-/**Index Header**/
+/** Index Header **/
 .indexHeader {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -57,7 +65,7 @@ body {
 
 .navLinks a {
   color: var(--off-black);
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: clamp(16px, 2vw, 24px);
   text-decoration: none;
   position: relative;
@@ -66,9 +74,8 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Underline effect using the ::after pseudo-element */
 .navLinks a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 5px;
   left: 0;
@@ -100,6 +107,81 @@ body {
   cursor: pointer;
 }
 
+/** Main content section (middle part) **/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex-grow: 1;  /* This ensures the container takes up available space in the middle */
+  padding: 10vh 5vw;  /* Adds padding to the entire grid */
+  justify-content: center;
+  justify-items: center;
+  min-height: 50vh;
+}
+
+/* Text section */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;  /* Remove padding from the text section */
+}
+
+.text-section h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive font size */
+  margin-bottom: 10px;
+  font-family: "Sacramento", normal;
+}
+
+.text-section p {
+  font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
+  margin-bottom: 20px;
+  font-family: "Alice", normal;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  font-family: "Alice", normal;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--yellow);
+  color: var(--off-black);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px var(--off-black);
+}
+
+.buttons button:hover {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
+
+/* Image section */
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stacks content in one column */
+  }
+
+  .image-section {
+    order: -1; /* Moves the image to the top */
+  }
+}
+
 /* Footer Styling */
 .footer {
   display: grid;
@@ -107,8 +189,9 @@ body {
   column-gap: 2vw;
   align-items: center;
   padding: 0 5vw;
-  height: var(--header-height);
+  height: var(--footer-height);
   color: var(--off-black);
+  margin-top: auto;
 }
 
 /* Copyright Section */
@@ -119,7 +202,7 @@ body {
 
 .copyright p {
   margin: 0;
-  font-size: clamp(16px, 2vw, 24px);
+  font-size: clamp(8px, 2vw, 24px);
 }
 
 /* Social Media Links Section */
