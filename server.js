@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const path = require("path");
+const { MongoClient } = require("mongodb");
 const app = express();
 
 // Serve static files (CSS, images, etc.) from the 'static' directory
@@ -11,14 +12,33 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
+const uri = process.env.MONGODB_URI;
+const dbName = process.env.DB_NAME;
+
+let db;
+
+// Connect to MongoDB
+MongoClient.connect(uri)
+  .then(client => {
+    console.log("✅ Connected to MongoDB");
+    db = client.db(dbName);
+  })
+  .catch(err => console.error("❌ MongoDB connection error:", err));
 
 app.get("/", (req, res) => {
   res.render("index", { page: 'home' });
 });
 
-app.get("/interior", (req, res) => {
-  res.render("interior", { page: 'interior' });
+app.get("/interior", async (req, res) => {
+  try {
+    const interiorPosts = await db.collection("Interior").find().toArray();
+    console.log("Fetched posts from MongoDB:", interiorPosts); // Log the data
+    res.render("interior", { page: 'interior', posts: interiorPosts });
+  } catch (err) {
+    console.error("❌ Error fetching interior posts:", err);
+    res.status(500).send("Something went wrong");
+  }
 });
 
 app.get("/design", (req, res) => {
