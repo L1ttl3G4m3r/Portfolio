@@ -235,16 +235,21 @@ footer {
   margin: 20px auto;
 }
 
+.grid-item {
+  overflow: hidden; /* Ensures that the image stays within the grid item */
+  position: relative; /* Makes sure the hover works inside the grid item */
+  transition: transform 0.3s ease; /* Smooth transitions for scaling */
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Zoom effect (slightly zoomed in) */
+}
+
 .grid-item img {
   width: 100%;
   height: auto;
-  cursor: pointer;
   border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.grid-item img:hover {
-  transform: scale(1.05);
+  transition: transform 0.3s ease; /* Smooth zoom effect on the image */
 }
 
 /* Modal (popup) styling */
@@ -261,10 +266,11 @@ footer {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--off-white);
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 80%; /* Adjust width as needed */
   max-width: 500px;
   text-align: center;
@@ -280,7 +286,7 @@ footer {
 
 .close-btn:hover,
 .close-btn:focus {
-  color: black;
+  color: var(--off-black);
   text-decoration: none;
   cursor: pointer;
 }

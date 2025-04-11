@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 app.get("/interior", async (req, res) => {
   try {
     const interiorPosts = await db.collection("Interior").find().toArray();
-    console.log("Fetched posts from MongoDB:", interiorPosts); // Log the data
+    console.log("Fetched posts from MongoDB:", interiorPosts);
     res.render("interior", { page: 'interior', posts: interiorPosts });
   } catch (err) {
     console.error("❌ Error fetching interior posts:", err);
