@@ -251,11 +251,16 @@ footer {
   grid-template-columns: repeat(4, 1fr); /* 4 images per row */
   gap: 20px;
   padding: 5vh 5vw;
+  justify-content: center;       /* ✅ center the grid content */
+  max-width: 1200px;             /* ✅ optional max width */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+    max-width: 500px; /* optional max width for small screens */
+    margin: 0 auto; /* center the container on small screens */
   }
 }
 
