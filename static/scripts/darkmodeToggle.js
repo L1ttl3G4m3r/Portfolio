@@ -32,7 +32,7 @@ if (currentTheme === 'dark') {
   darkModeImage.src = '/images/darkModeToggle.svg'; // Keep the dark mode icon
   // Change other images to light mode versions
   logoImage.src = '/images/logo-light.svg'; // Light mode logo
-  loginImage.src = '/images/login.svg'; // Light mode login icon
+  loginImage.src = '/images/login-light.svg'; // Light mode login icon
   // Change social media icons to light mode versions
   behanceImage.src = '/images/behance-light.svg';
   pinterestImage.src = '/images/pinterest-light.svg';
@@ -62,7 +62,7 @@ darkModeToggle.addEventListener('click', () => {
     darkModeImage.src = '/images/darkModeToggle.svg'; // Switch to dark mode icon
     // Switch to light mode images
     logoImage.src = '/images/logo-light.svg'; // Light mode logo
-    loginImage.src = '/images/login.svg'; // Light mode login icon
+    loginImage.src = '/images/login-light.svg'; // Light mode login icon
     // Social media icons in light mode
     behanceImage.src = '/images/behance-light.svg';
     pinterestImage.src = '/images/pinterest-light.svg';
