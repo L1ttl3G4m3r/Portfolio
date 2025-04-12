@@ -70,3 +70,8 @@ app.get("/login", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+// Old projects
+app.use('/blok1coderen/index.html', express.static(path.join(__dirname, 'blok1coderen')));
+app.use('/Schoonschip/index.html', express.static(path.join(__dirname, 'Schoonschip')));
+app.use('/Tamagochi/index.html', express.static(path.join(__dirname, 'Tamagochi')));
