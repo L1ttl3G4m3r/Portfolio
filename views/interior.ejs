@@ -8,7 +8,7 @@
     <main>
       <section>
         <h2>Interior</h2>
-        <p>Here are some interior works from the database:</p>
+        <p>My history, my experience and what I used to do.</p>
 
         <!-- Add a section for the grid -->
         <div class="grid-container">
@@ -20,6 +20,7 @@
               class="image-thumbnail"
               data-title="<%= post.title %>"
               data-description="<%= post.body %>"
+              data-href="<%= post.href %>"
             />
           </div>
           <% }) %>
@@ -31,6 +32,9 @@
             <span class="close-btn">&times;</span>
             <h2 id="modalTitle"></h2>
             <p id="modalDescription"></p>
+            <div class="buttons">
+              <button>See full project</button>
+            </div>
           </div>
         </div>
       </section>
