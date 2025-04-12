@@ -1,0 +1,180 @@
+:root {
+    --primary: #358a66;
+    --secundairy: #56c596;
+    --tertairy: #11C4D4;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+#home {
+    background-image: url(/Schoonschip/afbeeldingen/achtergrond.png);
+}
+
+#concept {
+    background-image: url(/Schoonschip/afbeeldingen/achtergrondconcept.png);
+}
+
+#tips {
+    background-image: url(/Schoonschip/afbeeldingen/achtergrondtips.png);
+}
+
+#mijn {
+    background-image: url(/Schoonschip/afbeeldingen/achtergrondbijdrage.png);
+}
+
+.logo {
+    width: auto;
+    height: 64.2px;
+    margin: 0;
+    position: absolute;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 8px;
+}
+
+nav > ul {
+    text-align: end;
+}
+
+.titel {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.slogan {
+    color: var(--primary);
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-bottom: 5px;
+}
+
+p, label {
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0px;
+    margin-left: 33px;
+    margin-right: 33px;
+}
+
+#p1 {
+    margin: 40px 33px 10px 130px;
+}
+
+#p2 {
+    margin: 0 33px 0 130px;
+}
+
+#p3 {
+    margin: 40px 100px 0 33px;
+}
+
+#p4, #p5 {
+    margin: 10px 100px 0 33px;
+}
+
+#uithap1, #uithap2, #uithap4 {
+    float: right;
+    margin: 0;
+}
+
+#uithap3 {
+    float: left;
+    margin: 30px 0 0 0;
+}
+
+#checkbox {
+    list-style: none;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+#checkbox > li {
+    margin: 10px 0 10px 0;
+}
+
+input {
+    appearance: none;
+    vertical-align: top;
+}
+
+#checkbox1::before,
+#checkbox2::before,
+#checkbox3::before,
+#checkbox4::before,
+#checkbox5::before {
+    content: url(/Schoonschip/afbeeldingen/unchecked.svg);
+}
+
+#checkbox1:checked,
+#checkbox2:checked,
+#checkbox3:checked,
+#checkbox4:checked,
+#checkbox5:checked {
+    content: url(/Schoonschip/afbeeldingen/checked.svg);
+}
+
+label {
+    width: 90px;
+    height: 70px;
+    margin: 0;
+    display: inline-block;
+}
+
+div.scroll-container {
+    background-color: transparent;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px;
+}
+  
+div.scroll-container img {
+    padding: 5px;
+}
+
+.knop {
+    margin-left: 113px;
+    animation: aandacht 2s ease 0s infinite normal forwards;
+}
+
+@keyframes aandacht {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.copyright {
+    color: var(--primary);
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 35px 0px 0px 0px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game Library KH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/blok1coderen/styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+  </head>
+  <body>
+    <header>
+      <!--Navigation Head of page-->
+      <a href="index.html"><img class="logo" src="/blok1coderen/images/logo1.png" alt="Logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="leaveyourinput.html">Input</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Head of page-->
+      <h1>Leave Your Input</h1>
+      <p class="description">Any ideas on what I should check out myself or what you think of these games?</p>
+      <p class="scroll_button"><a href="#down">Start Now</a></p>
+      <!--Navigation dashes-->
+      <nav>
+        <a class="dashes" href="index.html">-</a>
+        <a class="dashes" href="aboutme.html">-</a>
+        <a class="dashes" href="leaveyourinput.html">-</a>
+      </nav>
+      <!--Information form-->
+      <h2 id="down" class="opinion">Give your opinion!</h2>
+      <form>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Put your first name here" required>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Put your last name here" required>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" placeholder="Put your email here" required>
+        <label for="game">Game:</label>
+        <input type="text" id="game" name="game" placeholder="Put your game here" required>
+        <!--Textarea-->
+        <label for="input">Input:</label>
+        <textarea id="input" name="input" rows="4" cols="50" placeholder="Put your own input here" required></textarea>
+        <!--Star rating-->
+        <div class="star-rating">
+          <input type="radio" name="rating" id="rating-1" required>
+          <label for="rating-1">
+            <img src="/blok1coderen/images/starpurple.png" alt="star">
+            <img class="gold" src="/blok1coderen/images/stargold.png" alt="star">
+          </label>
+          <input type="radio" name="rating" id="rating-2" required>
+          <label for="rating-2">
+            <img src="/blok1coderen/images/starpurple.png" alt="star">
+            <img class="gold" src="/blok1coderen/images/stargold.png" alt="star">
+          </label>
+          <input type="radio" name="rating" id="rating-3" required>
+          <label for="rating-3">
+            <img src="/blok1coderen/images/starpurple.png" alt="star">
+            <img class="gold" src="/blok1coderen/images/stargold.png" alt="star">
+          </label>
+          <input type="radio" name="rating" id="rating-4" required>
+          <label for="rating-4">
+            <img src="/blok1coderen/images/starpurple.png" alt="star">
+            <img class="gold" src="/blok1coderen/images/stargold.png" alt="star">
+          </label>
+          <input type="radio" name="rating" id="rating-5" required>
+          <label for="rating-5">
+            <img src="/blok1coderen/images/starpurple.png" alt="star">
+            <img class="gold" src="/blok1coderen/images/stargold.png" alt="star">
+          </label>
+        </div>
+        <input class="submit" type="submit" value="Submit">
+      </form>
+    </main>
+    <footer>
+      <p>©Made by: Kaylee Hoek</p>
+    </footer>
+  </body>
+</html>
