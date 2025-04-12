@@ -67,6 +67,13 @@ app.get("/login", async (req, res) => {
   res.render("login", { page: 'login' });
 });
 
+app.use((req, res, next) => {
+  if (req.hostname === 'kayleehoek.me') {
+    return res.redirect(301, 'https://www.kayleehoek.me' + req.url);
+  }
+  next();
+});
+
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server is running at http://0.0.0.0:${port}`);
 });
