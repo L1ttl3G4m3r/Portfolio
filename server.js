@@ -63,6 +63,10 @@ app.get("/coding", async (req, res) => {
   }
 });
 
+app.get("/login", async (req, res) => {
+  res.render("login", { page: 'login' });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

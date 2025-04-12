@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <header>
+      <%- include('partials/headerIndex') %>
+    </header>
+    <main>
+      <section class="login-container">
+        <!-- Image Section -->
+        <div class="login-image-section">
+          <img src="/images/loginAvatar.png" alt="Login Avatar" class="login-image">
+        </div>
+      
+        <!-- Text and Input Section -->
+        <div class="login-form-section">
+          <div class="login-text">
+            <h1>Login</h1>
+          </div>
+          <div class="login-inputs">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="...">
+            </div>
+      
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="...">
+            </div>
+          </div>
+        </div>
+      
+        <!-- Button Section -->
+        <div class="login-button-section">
+          <button class="login-button">Login</button>
+        </div>
+      </section>      
+    </main>
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
+  </body>
+</html>
