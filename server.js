@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 
 app.get("/interior", async (req, res) => {
   try {
-    const interiorPosts = await db.collection("Projects.Interior").find().sort({ _id: -1 }).toArray();
+    const interiorPosts = await db.collection("Projects").find().sort({ _id: -1 }).toArray();
     console.log("Fetched posts from MongoDB:", interiorPosts);
     res.render("interior", { page: 'interior', posts: interiorPosts });
   } catch (err) {
@@ -43,7 +43,7 @@ app.get("/interior", async (req, res) => {
 
 app.get("/design", async (req, res) => {
   try {
-    const designPosts = await db.collection("Projects.Design").find().sort({ _id: -1 }).toArray();
+    const designPosts = await db.collection("Projects").find().sort({ _id: -1 }).toArray();
     console.log("Fetched posts from MongoDB:", designPosts);
     res.render("design", { page: 'design', posts: designPosts });
   } catch (err) {
@@ -54,11 +54,13 @@ app.get("/design", async (req, res) => {
 
 app.get("/coding", async (req, res) => {
   try {
-    const codingPosts = await db.collection("Projects.Coding").find().sort({ _id: -1 }).toArray();
-    console.log("Fetched posts from MongoDB:", codingPosts);
+    const doc = await db.collection("Projects").findOne();
+    const codingPosts = doc?.Coding || [];
+
+    console.log("Fetched Coding posts:", codingPosts);
     res.render("coding", { page: 'coding', posts: codingPosts });
   } catch (err) {
-    console.error("❌ Error fetching interior posts:", err);
+    console.error("❌ Error fetching Coding posts:", err);
     res.status(500).send("Something went wrong");
   }
 });
