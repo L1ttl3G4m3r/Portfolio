@@ -54,13 +54,15 @@ app.get("/design", async (req, res) => {
 
 app.get("/coding", async (req, res) => {
   try {
-    const doc = await db.collection("Projects").findOne();
-    const codingPosts = doc?.Coding || [];
+    const codingPosts = await db.collection("Projects")
+      .find({ category: "Coding" }) // or whatever field you use
+      .sort({ _id: -1 })
+      .toArray();
 
-    console.log("Fetched Coding posts:", codingPosts);
+    console.log("Fetched coding posts:", codingPosts);
     res.render("coding", { page: 'coding', posts: codingPosts });
   } catch (err) {
-    console.error("❌ Error fetching Coding posts:", err);
+    console.error("❌ Error fetching coding posts:", err);
     res.status(500).send("Something went wrong");
   }
 });
