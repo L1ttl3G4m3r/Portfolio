@@ -54,15 +54,11 @@ app.get("/design", async (req, res) => {
 
 app.get("/coding", async (req, res) => {
   try {
-    const collections = await db.listCollections().toArray();
-    console.log("🧠 Collections in DB:", collections.map(c => c.name));
-
-    const codingPosts = await db.collection("Coding").find().toArray();
-    console.log("📦 Coding posts:", codingPosts);
-
+    const codingPosts = await db.collection("Coding").find().sort({ _id: -1 }).toArray();
+    console.log("Fetched posts from MongoDB:", codingPosts);
     res.render("coding", { page: 'coding', posts: codingPosts });
   } catch (err) {
-    console.error("❌ Error:", err);
+    console.error("❌ Error fetching interior posts:", err);
     res.status(500).send("Something went wrong");
   }
 });
